@@ -1,6 +1,6 @@
 {
-  "name": "no-import-from",
-  "version": "0.0.1",
+  "name": "eslint-plugin-no-import-from",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {

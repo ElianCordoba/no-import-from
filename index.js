@@ -1,4 +1,6 @@
 /** @type {import('eslint/lib/shared/types').Plugin} */
 module.exports = {
-  'no-import-from': require('./rule'),
+  rules: {
+    'no-import-from': require('./rule'),
+  }
 }
