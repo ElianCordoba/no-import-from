@@ -3,7 +3,7 @@ module.exports = {
   meta: {
     type: 'problem',
     messages: {
-      invalidImport: 'Importing from {{ import }} is forbidden.{{ suggestion }}'
+      invalidImport: 'Importing from "{{ import }}" is forbidden.{{ suggestion }}'
     },
     schema: [
       { "type": "string" }, // The regexp

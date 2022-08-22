@@ -8,7 +8,6 @@ const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2022, sourceTy
 // Disallow importing from "@para/utils" with "src" in the path
 
 const noSrcFromParaUtil = "@para[/]utils.*[/]src"
-console.log('start')
 ruleTester.run('no-import-from-dir', rule, {
   valid: [
     {
@@ -31,7 +30,7 @@ ruleTester.run('no-import-from-dir', rule, {
       options: [noSrcFromParaUtil, " Remove the 'src' in the path"],
       errors: [
         {
-          message: "Importing from @para/utils/src is forbidden. Remove the 'src' in the path"
+          message: `Importing from "@para/utils/src" is forbidden. Remove the 'src' in the path`
         },
       ],
     },
